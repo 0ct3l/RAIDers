@@ -5,7 +5,8 @@
 
 ## Team Members
 - Aastha Shah
-- Arnav Kharbanda 
+- Arnav Kharbanda
+- Bill Paseman
 - Chantera Lazard
 - Jialan Ma
 - Kushal Koirala
