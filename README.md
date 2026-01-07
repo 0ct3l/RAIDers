@@ -2,3 +2,20 @@
 
 ## Flowchart
 ![Flowchart](RareDiseaseFlowchart.png)
+
+## Team Members
+- Aastha Shah
+- Arnav Kharbanda 
+- Chantera Lazard
+- Jialan Ma
+- Kyulin Kim
+- Pu Kao
+- Shreya Nandakumar
+- Vibha Acharya
+- William Lu
+
+
+
+
+
+
