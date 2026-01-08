@@ -130,7 +130,6 @@ Change in centroid position < 0.001
 - Bootstrap resampling (100 iterations)
 - Cluster consistency across resamples
 
-⸻
 
 # 3. Supervised Analysis: Feature Validation
 
@@ -144,13 +143,11 @@ To validate that extracted features are biologically informative, rather than cl
 - Input: Same feature set used in clustering
 - Train/test split: 80/20, stratified by gene
 
-⸻
 
 # 3.2 Models
 - XGBoost classifier
 - TabTransformer (comparison model)
 
-⸻
 
 # 3.3 Supervised Validation
 - Metrics
