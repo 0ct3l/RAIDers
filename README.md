@@ -1,6 +1,6 @@
 # RAIDers
 
-![image](https://github.com/collaborativebioinformatics/RAIDers/blob/main/RareDiseaseFlowchart.png)
+
 
 ---
 
@@ -12,6 +12,8 @@ Rare disease genomics faces two major challenges:
 Rare disease genomics research is limited by small sample sizes, heterogeneous annotations, and fragmented data across institutions. Although many public databases curate valuable information on disease-causing variants, these resources are rarely analysed together in a unified and scalable way.
 
 This project focuses on Amyotrophic Lateral Sclerosis (ALS) and aims to integrate real, publicly available genomic and biological annotations from multiple databases into a single feature space for exploratory analysis
+
+<img width="2456" height="1842" alt="RAIDer flow-2" src="https://github.com/user-attachments/assets/4de9479f-2a92-48d5-9805-c3e3d930f130" />
 
 
 # 2. Scientific Goal
