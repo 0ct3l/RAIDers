@@ -78,7 +78,7 @@ def assign_contextual_phenotype(variant_row, population_id):
 
 The framework simulates five institutional silos partitioned by superpopulation (AFR, AMR, EAS, EUR, SAS).
 
-### 3.1 Federated Learning Across Simulated Hospitals (Placeholder for Arnav)
+### 3.1 Federated Learning Across Simulated Hospitals 
 
 Molecular subtypes are discovered through a decentralized K-Means algorithm:
 
@@ -86,11 +86,10 @@ Molecular subtypes are discovered through a decentralized K-Means algorithm:
 * **Global Aggregation:** Centroids are sent to a central server for federated averaging.
 * **Broadcast:** Updated global centroids are returned to clients; the process repeats until convergence (change < 0.001).
 
-### 3.2 Analytical Metrics (Placeholder for Arnav)
+### 3.2 Analytical Metrics
 
-* **Silhouette Score:** Evaluates the cohesion and separation of discovered molecular clusters.
-* **Clustering Stability:** Validated via bootstrap resampling (100 iterations).
-* **Biological Validation (Placeholder):** Analysis of cluster-driving features and pathway enrichment.
+* **Computational Validation:** Evaluates the cohesion and separation of discovered molecular clusters using silhouette scores and within-cluster sum of squares.
+* **Biological Validation:** Evaluate if patients with variants in genes associated with specific ALS subtypes are clustered together.
 
 ---
 
@@ -110,7 +109,6 @@ Molecular subtypes are discovered through a decentralized K-Means algorithm:
 | [**ClinVar**](https://www.ncbi.nlm.nih.gov/clinvar/) | Pathogenic Variant Curation | 
 | [**gnomAD**](https://gnomad.broadinstitute.org) | Gene & Variant Constraint Scores; Population AFs  | 
 | [**OMIM**](https://www.omim.org) / [**Orphanet**](https://www.orpha.net)| Clinical gene-disease associations |
-| [**Stringdb**](https://string-db.org) | Protein-Protein interaction network topology | 
 
 # Contributers 
 
