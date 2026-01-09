@@ -19,6 +19,10 @@ RAIDers addresses this fragmentation by consolidating disparate genomic signals 
 * **Federated Feasibility:** Demonstrating that analytical fidelity is maintained when data is physically separated across institutional nodes.
 * **Ground Truth Validation:** Assessing whether discovered subtypes align with the simulated interaction rules.
 
+## Workflow
+
+<img width="4189" height="4660" alt="RAIDer flow (2)" src="https://github.com/user-attachments/assets/5441170c-ad2a-4bd0-859d-fe014120a3a6" />
+
 ---
 
 ## 1. Pipeline Execution (Placeholder)
