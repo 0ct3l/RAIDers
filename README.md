@@ -44,7 +44,7 @@ The pipeline utilizes `clinvar.cleaned.csv` to identify approximately 450 pathog
 
 ### 2.2 The Interaction Model: gnomAD AF Integration
 
-Rather than using static lookups, we simulate variable penetrance by treating the ancestral background as a clinical modifier. We utilize **gnomAD Allele Frequency (AF)** logic to determine population-specific "tolerance" to pathogenic variants.
+Rather than using static lookups, we simulate variable penetrance by treating the ancestral background as a clinical modifier. We utilize **gnomAD** as our Genomic Reference Frame. Specifically, we adopt gnomAD’s **superpopulation divisions** and **relative allelic ratios** to construct 'Ancestral Modifiers,' allowing us to simulate how different genomic backgrounds influence clinical expression. We then utilize **gnomAD Allele Frequency (AF)** logic to determine population-specific "tolerance" to pathogenic variants.
 
 **Rationale for AF Estimation:**
 Empirical gnomAD frequencies for rare ALS variants are often  or zero in specific subpopulations. Direct application would result in a sparse matrix with insufficient carrier counts for machine learning. We estimate and amplify these frequencies (targeting 0.01% – 0.2%) to ensure analytical viability while maintaining biological realism through Selection penalties (e.g., a 50% AF reduction for Loss-of-Function mutations).
