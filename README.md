@@ -127,7 +127,7 @@ Molecular subtypes are discovered through a decentralized K-Means algorithm:
 |Name| Email | ORCID | Institution | 
 | :--: | :--: | :--: | :--: |
 | Aastha Shah | aasthashah.work@gmail.com | 0009-0008-7811-0177 | Queens University Belfast |
-| Arnav Kharbanda | | 0009-0007-9195-9960 | Carnegie Mellon University | 
+| Arnav Kharbanda | arnavkha@andrew.cmu.edu | 0009-0007-9195-9960 | Carnegie Mellon University | 
 | Bill Paseman | bill@rarekidneycancer.org | 0000-0002-5020-0866 | |
 | Chantera Lazard | lazard.c@northeastern.edu | 0009-0006-1367-3812 | Northeastern University | 
 | Jialan Ma | jialanma7@gmail.com |0009-0007-2670-9076 | Broad Institute of MIT and Harvard |
