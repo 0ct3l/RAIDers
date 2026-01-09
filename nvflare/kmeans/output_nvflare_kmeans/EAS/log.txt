@@ -1,433 +1,433 @@
-2026-01-09 20:04:19,098 - ClientTaskWorker - INFO - ClientTaskWorker started to run
-2026-01-09 20:04:19,172 - CoreCell - INFO - EAS.simulate_job: created backbone external connector to tcp://localhost:61287
-2026-01-09 20:04:19,172 - conn_manager - INFO - Connector [CH00001 ACTIVE tcp://localhost:61287] is starting
-2026-01-09 20:04:19,172 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
-2026-01-09 20:04:19,172 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
-2026-01-09 20:04:19,173 - conn_manager - INFO - Connection [CN00002 127.0.0.1:61316 => 127.0.0.1:61287] is created: PID: 78683
-2026-01-09 20:04:19,278 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
-2026-01-09 20:04:19,278 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
-2026-01-09 20:04:19,351 - utils - INFO - Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
-2026-01-09 20:04:19,352 - utils - INFO - NumExpr defaulting to 8 threads.
-2026-01-09 20:04:19,512 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
-2026-01-09 20:04:19,512 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
-2026-01-09 20:04:19,512 - AuxRunner - INFO - registered aux handler for topic __end_run__
-2026-01-09 20:04:19,512 - AuxRunner - INFO - registered aux handler for topic __do_task__
-2026-01-09 20:04:19,512 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
-2026-01-09 20:04:19,513 - AuxRunner - INFO - registered aux handler for topic __sync_runner__
-2026-01-09 20:04:19,513 - AuxRunner - INFO - registered aux handler for topic __job_heartbeat__
-2026-01-09 20:04:19,513 - AuxRunner - INFO - registered aux handler for topic __task_check__
-2026-01-09 20:04:20,032 - ClientRunner - INFO - [identity=EAS, run=simulate_job] - synced to parent server in 0.5187041759490967 seconds
-2026-01-09 20:04:20,032 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REQUEST
-2026-01-09 20:04:20,033 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REPLY
-2026-01-09 20:04:20,033 - ReliableMessage - INFO - enabled reliable message: max_request_workers=20 query_interval=2.0
-2026-01-09 20:04:20,033 - AuxRunner - INFO - registered aux handler for topic fed.event
-2026-01-09 20:04:20,033 - ClientRunner - INFO - [identity=EAS, run=simulate_job] - client runner started
-2026-01-09 20:04:20,033 - ClientTaskWorker - INFO - Initialize ClientRunner for client: EAS
-2026-01-09 20:04:20,040 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.006405 seconds
-2026-01-09 20:04:20,041 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:20,041 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=17d4c6dd-1be4-4086-9535-f5a5fc279462
-2026-01-09 20:04:20,041 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=17d4c6dd-1be4-4086-9535-f5a5fc279462] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:20,185 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=17d4c6dd-1be4-4086-9535-f5a5fc279462] - finished processing task
-2026-01-09 20:04:20,344 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=17d4c6dd-1be4-4086-9535-f5a5fc279462] - start to send task result to server
-2026-01-09 20:04:20,344 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:20,411 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.067099 seconds
-2026-01-09 20:04:20,412 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=17d4c6dd-1be4-4086-9535-f5a5fc279462] - task result sent to server
-2026-01-09 20:04:20,412 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:22,428 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.009820 seconds
-2026-01-09 20:04:22,428 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:22,428 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=1a5a78a9-2919-4a9b-a501-2c4ce1ba5a12
-2026-01-09 20:04:22,429 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=1a5a78a9-2919-4a9b-a501-2c4ce1ba5a12] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:22,458 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=1a5a78a9-2919-4a9b-a501-2c4ce1ba5a12] - finished processing task
-2026-01-09 20:04:22,466 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=1a5a78a9-2919-4a9b-a501-2c4ce1ba5a12] - start to send task result to server
-2026-01-09 20:04:22,467 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:22,490 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.023069 seconds
-2026-01-09 20:04:22,490 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=1a5a78a9-2919-4a9b-a501-2c4ce1ba5a12] - task result sent to server
-2026-01-09 20:04:22,490 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:24,526 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.014405 seconds
-2026-01-09 20:04:24,527 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:24,527 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=c761cadb-6969-4026-84d7-9bc46508551f
-2026-01-09 20:04:24,527 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c761cadb-6969-4026-84d7-9bc46508551f] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:24,541 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c761cadb-6969-4026-84d7-9bc46508551f] - finished processing task
-2026-01-09 20:04:24,546 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c761cadb-6969-4026-84d7-9bc46508551f] - start to send task result to server
-2026-01-09 20:04:24,546 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:24,573 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.026123 seconds
-2026-01-09 20:04:24,573 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c761cadb-6969-4026-84d7-9bc46508551f] - task result sent to server
-2026-01-09 20:04:24,573 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:26,581 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002944 seconds
-2026-01-09 20:04:26,581 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:26,582 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=ff2199e2-a401-4564-bff3-a06d422999f7
-2026-01-09 20:04:26,582 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ff2199e2-a401-4564-bff3-a06d422999f7] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:26,592 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ff2199e2-a401-4564-bff3-a06d422999f7] - finished processing task
-2026-01-09 20:04:26,594 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ff2199e2-a401-4564-bff3-a06d422999f7] - start to send task result to server
-2026-01-09 20:04:26,594 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:26,613 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.018643 seconds
-2026-01-09 20:04:26,613 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ff2199e2-a401-4564-bff3-a06d422999f7] - task result sent to server
-2026-01-09 20:04:26,613 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:28,629 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.010070 seconds
-2026-01-09 20:04:28,629 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:28,629 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=5836e3ca-0106-47f1-8ffc-67051a83a1e5
-2026-01-09 20:04:28,629 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=5836e3ca-0106-47f1-8ffc-67051a83a1e5] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:28,643 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=5836e3ca-0106-47f1-8ffc-67051a83a1e5] - finished processing task
-2026-01-09 20:04:28,646 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=5836e3ca-0106-47f1-8ffc-67051a83a1e5] - start to send task result to server
-2026-01-09 20:04:28,646 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:28,665 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019291 seconds
-2026-01-09 20:04:28,666 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=5836e3ca-0106-47f1-8ffc-67051a83a1e5] - task result sent to server
-2026-01-09 20:04:28,666 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:30,683 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.016290 seconds
-2026-01-09 20:04:30,684 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:30,684 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=0c5b191d-1af3-4654-a8d4-2a30458a7203
-2026-01-09 20:04:30,684 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=0c5b191d-1af3-4654-a8d4-2a30458a7203] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:30,697 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=0c5b191d-1af3-4654-a8d4-2a30458a7203] - finished processing task
-2026-01-09 20:04:30,699 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=0c5b191d-1af3-4654-a8d4-2a30458a7203] - start to send task result to server
-2026-01-09 20:04:30,699 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:30,717 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.018312 seconds
-2026-01-09 20:04:30,717 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=0c5b191d-1af3-4654-a8d4-2a30458a7203] - task result sent to server
-2026-01-09 20:04:30,718 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:32,731 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.009735 seconds
-2026-01-09 20:04:32,732 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:32,732 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=d568f156-e2fb-42d5-8584-036a01ae9ace
-2026-01-09 20:04:32,732 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=d568f156-e2fb-42d5-8584-036a01ae9ace] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:32,742 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=d568f156-e2fb-42d5-8584-036a01ae9ace] - finished processing task
-2026-01-09 20:04:32,745 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=d568f156-e2fb-42d5-8584-036a01ae9ace] - start to send task result to server
-2026-01-09 20:04:32,745 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:32,766 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.020667 seconds
-2026-01-09 20:04:32,766 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=d568f156-e2fb-42d5-8584-036a01ae9ace] - task result sent to server
-2026-01-09 20:04:32,767 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:34,780 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.012821 seconds
-2026-01-09 20:04:34,781 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:34,781 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=eea28e28-756f-4502-bfa7-57dab353fab0
-2026-01-09 20:04:34,781 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=eea28e28-756f-4502-bfa7-57dab353fab0] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:34,793 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=eea28e28-756f-4502-bfa7-57dab353fab0] - finished processing task
-2026-01-09 20:04:34,795 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=eea28e28-756f-4502-bfa7-57dab353fab0] - start to send task result to server
-2026-01-09 20:04:34,796 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:34,815 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019509 seconds
-2026-01-09 20:04:34,815 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=eea28e28-756f-4502-bfa7-57dab353fab0] - task result sent to server
-2026-01-09 20:04:34,816 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:36,820 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.003598 seconds
-2026-01-09 20:04:36,821 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:36,821 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=6d592b42-fd69-4744-bcb6-5cc514bfaf6d
-2026-01-09 20:04:36,822 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=6d592b42-fd69-4744-bcb6-5cc514bfaf6d] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:36,837 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=6d592b42-fd69-4744-bcb6-5cc514bfaf6d] - finished processing task
-2026-01-09 20:04:36,843 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=6d592b42-fd69-4744-bcb6-5cc514bfaf6d] - start to send task result to server
-2026-01-09 20:04:36,844 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:36,861 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.017698 seconds
-2026-01-09 20:04:36,862 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=6d592b42-fd69-4744-bcb6-5cc514bfaf6d] - task result sent to server
-2026-01-09 20:04:36,862 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:38,871 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.003715 seconds
-2026-01-09 20:04:38,872 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:38,872 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=70b57623-81b0-4e5c-9d3b-e4e6971c8ea2
-2026-01-09 20:04:38,872 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=70b57623-81b0-4e5c-9d3b-e4e6971c8ea2] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:38,884 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=70b57623-81b0-4e5c-9d3b-e4e6971c8ea2] - finished processing task
-2026-01-09 20:04:38,892 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=70b57623-81b0-4e5c-9d3b-e4e6971c8ea2] - start to send task result to server
-2026-01-09 20:04:38,892 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:38,911 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.018454 seconds
-2026-01-09 20:04:38,911 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=70b57623-81b0-4e5c-9d3b-e4e6971c8ea2] - task result sent to server
-2026-01-09 20:04:38,911 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:40,918 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.004011 seconds
-2026-01-09 20:04:40,918 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:40,918 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=39bbfcca-308b-4c8a-b2d2-98778b542c56
-2026-01-09 20:04:40,918 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=39bbfcca-308b-4c8a-b2d2-98778b542c56] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:40,935 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=39bbfcca-308b-4c8a-b2d2-98778b542c56] - finished processing task
-2026-01-09 20:04:40,962 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=39bbfcca-308b-4c8a-b2d2-98778b542c56] - start to send task result to server
-2026-01-09 20:04:40,962 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:40,983 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019953 seconds
-2026-01-09 20:04:40,983 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=39bbfcca-308b-4c8a-b2d2-98778b542c56] - task result sent to server
-2026-01-09 20:04:40,983 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:43,006 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.017560 seconds
-2026-01-09 20:04:43,006 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:43,006 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=b0480e9e-e179-45ef-8d0c-962d2ad67ed8
-2026-01-09 20:04:43,007 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=b0480e9e-e179-45ef-8d0c-962d2ad67ed8] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:43,016 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=b0480e9e-e179-45ef-8d0c-962d2ad67ed8] - finished processing task
-2026-01-09 20:04:43,019 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=b0480e9e-e179-45ef-8d0c-962d2ad67ed8] - start to send task result to server
-2026-01-09 20:04:43,019 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:43,040 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.020944 seconds
-2026-01-09 20:04:43,040 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=b0480e9e-e179-45ef-8d0c-962d2ad67ed8] - task result sent to server
-2026-01-09 20:04:43,040 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:45,079 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.030944 seconds
-2026-01-09 20:04:45,079 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:45,079 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=78df468c-38ac-4ee4-b2ed-8e9d49538768
-2026-01-09 20:04:45,080 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=78df468c-38ac-4ee4-b2ed-8e9d49538768] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:45,107 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=78df468c-38ac-4ee4-b2ed-8e9d49538768] - finished processing task
-2026-01-09 20:04:45,111 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=78df468c-38ac-4ee4-b2ed-8e9d49538768] - start to send task result to server
-2026-01-09 20:04:45,111 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:45,138 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.027518 seconds
-2026-01-09 20:04:45,139 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=78df468c-38ac-4ee4-b2ed-8e9d49538768] - task result sent to server
-2026-01-09 20:04:45,139 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:47,148 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002819 seconds
-2026-01-09 20:04:47,148 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:47,148 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=6842d4ed-bef0-451d-8f86-8e2fc55b4f87
-2026-01-09 20:04:47,148 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=6842d4ed-bef0-451d-8f86-8e2fc55b4f87] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:47,163 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=6842d4ed-bef0-451d-8f86-8e2fc55b4f87] - finished processing task
-2026-01-09 20:04:47,167 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=6842d4ed-bef0-451d-8f86-8e2fc55b4f87] - start to send task result to server
-2026-01-09 20:04:47,167 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:47,188 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.021034 seconds
-2026-01-09 20:04:47,189 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=6842d4ed-bef0-451d-8f86-8e2fc55b4f87] - task result sent to server
-2026-01-09 20:04:47,189 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:49,197 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002713 seconds
-2026-01-09 20:04:49,198 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:49,198 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=8e259c03-3ead-400d-bc83-d58562451af4
-2026-01-09 20:04:49,198 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=8e259c03-3ead-400d-bc83-d58562451af4] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:49,209 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=8e259c03-3ead-400d-bc83-d58562451af4] - finished processing task
-2026-01-09 20:04:49,215 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=8e259c03-3ead-400d-bc83-d58562451af4] - start to send task result to server
-2026-01-09 20:04:49,216 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:49,238 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.021871 seconds
-2026-01-09 20:04:49,238 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=8e259c03-3ead-400d-bc83-d58562451af4] - task result sent to server
-2026-01-09 20:04:49,238 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:51,251 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005528 seconds
-2026-01-09 20:04:51,252 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:51,252 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=9dff5cdc-a490-4ec4-9847-e0eb770ce450
-2026-01-09 20:04:51,252 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=9dff5cdc-a490-4ec4-9847-e0eb770ce450] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:51,273 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=9dff5cdc-a490-4ec4-9847-e0eb770ce450] - finished processing task
-2026-01-09 20:04:51,275 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=9dff5cdc-a490-4ec4-9847-e0eb770ce450] - start to send task result to server
-2026-01-09 20:04:51,276 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:51,301 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.025393 seconds
-2026-01-09 20:04:51,301 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=9dff5cdc-a490-4ec4-9847-e0eb770ce450] - task result sent to server
-2026-01-09 20:04:51,302 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:53,310 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002774 seconds
-2026-01-09 20:04:53,310 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:53,311 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=ba7fb3e8-2dfe-400a-a3fe-91586b8bfb04
-2026-01-09 20:04:53,311 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ba7fb3e8-2dfe-400a-a3fe-91586b8bfb04] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:53,326 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ba7fb3e8-2dfe-400a-a3fe-91586b8bfb04] - finished processing task
-2026-01-09 20:04:53,330 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ba7fb3e8-2dfe-400a-a3fe-91586b8bfb04] - start to send task result to server
-2026-01-09 20:04:53,330 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:53,358 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.027374 seconds
-2026-01-09 20:04:53,358 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ba7fb3e8-2dfe-400a-a3fe-91586b8bfb04] - task result sent to server
-2026-01-09 20:04:53,358 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:55,368 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002948 seconds
-2026-01-09 20:04:55,368 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:55,368 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=4a9d76b5-d74b-4915-8933-738718e46e06
-2026-01-09 20:04:55,369 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=4a9d76b5-d74b-4915-8933-738718e46e06] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:55,380 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=4a9d76b5-d74b-4915-8933-738718e46e06] - finished processing task
-2026-01-09 20:04:55,382 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=4a9d76b5-d74b-4915-8933-738718e46e06] - start to send task result to server
-2026-01-09 20:04:55,383 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:55,406 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.023419 seconds
-2026-01-09 20:04:55,406 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=4a9d76b5-d74b-4915-8933-738718e46e06] - task result sent to server
-2026-01-09 20:04:55,407 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:57,413 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002884 seconds
-2026-01-09 20:04:57,414 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:57,414 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=e4a91759-cba5-4516-b74e-0f013533d6ce
-2026-01-09 20:04:57,414 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=e4a91759-cba5-4516-b74e-0f013533d6ce] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:57,426 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=e4a91759-cba5-4516-b74e-0f013533d6ce] - finished processing task
-2026-01-09 20:04:57,429 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=e4a91759-cba5-4516-b74e-0f013533d6ce] - start to send task result to server
-2026-01-09 20:04:57,429 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:57,449 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019977 seconds
-2026-01-09 20:04:57,450 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=e4a91759-cba5-4516-b74e-0f013533d6ce] - task result sent to server
-2026-01-09 20:04:57,450 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:04:59,457 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002690 seconds
-2026-01-09 20:04:59,457 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:04:59,457 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=4c4daf86-66d6-45a6-ba40-34f36a0ed4a5
-2026-01-09 20:04:59,458 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=4c4daf86-66d6-45a6-ba40-34f36a0ed4a5] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:04:59,469 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=4c4daf86-66d6-45a6-ba40-34f36a0ed4a5] - finished processing task
-2026-01-09 20:04:59,474 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=4c4daf86-66d6-45a6-ba40-34f36a0ed4a5] - start to send task result to server
-2026-01-09 20:04:59,474 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:04:59,494 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019448 seconds
-2026-01-09 20:04:59,494 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=4c4daf86-66d6-45a6-ba40-34f36a0ed4a5] - task result sent to server
-2026-01-09 20:04:59,494 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:01,502 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002604 seconds
-2026-01-09 20:05:01,503 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:01,503 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=05ed1808-1d5e-436a-8d5c-1ed92e01615f
-2026-01-09 20:05:01,504 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=05ed1808-1d5e-436a-8d5c-1ed92e01615f] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:01,519 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=05ed1808-1d5e-436a-8d5c-1ed92e01615f] - finished processing task
-2026-01-09 20:05:01,522 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=05ed1808-1d5e-436a-8d5c-1ed92e01615f] - start to send task result to server
-2026-01-09 20:05:01,522 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:01,543 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.020418 seconds
-2026-01-09 20:05:01,543 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=05ed1808-1d5e-436a-8d5c-1ed92e01615f] - task result sent to server
-2026-01-09 20:05:01,543 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:03,548 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002776 seconds
-2026-01-09 20:05:03,549 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:03,549 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=a26b876c-f4dd-4a56-9db8-298f49fb995c
-2026-01-09 20:05:03,549 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a26b876c-f4dd-4a56-9db8-298f49fb995c] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:03,558 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a26b876c-f4dd-4a56-9db8-298f49fb995c] - finished processing task
-2026-01-09 20:05:03,561 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a26b876c-f4dd-4a56-9db8-298f49fb995c] - start to send task result to server
-2026-01-09 20:05:03,561 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:03,580 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.018645 seconds
-2026-01-09 20:05:03,580 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a26b876c-f4dd-4a56-9db8-298f49fb995c] - task result sent to server
-2026-01-09 20:05:03,580 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:05,594 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.013742 seconds
-2026-01-09 20:05:05,595 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:05,595 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=f2c05429-1a15-4644-b686-68a785f1f685
-2026-01-09 20:05:05,595 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f2c05429-1a15-4644-b686-68a785f1f685] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:05,606 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f2c05429-1a15-4644-b686-68a785f1f685] - finished processing task
-2026-01-09 20:05:05,608 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f2c05429-1a15-4644-b686-68a785f1f685] - start to send task result to server
-2026-01-09 20:05:05,608 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:05,628 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.020107 seconds
-2026-01-09 20:05:05,629 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f2c05429-1a15-4644-b686-68a785f1f685] - task result sent to server
-2026-01-09 20:05:05,629 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:07,645 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.015593 seconds
-2026-01-09 20:05:07,646 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:07,646 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=3a8ec481-7b7c-4cd7-9a09-0adce617d1d3
-2026-01-09 20:05:07,646 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=3a8ec481-7b7c-4cd7-9a09-0adce617d1d3] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:07,655 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=3a8ec481-7b7c-4cd7-9a09-0adce617d1d3] - finished processing task
-2026-01-09 20:05:07,658 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=3a8ec481-7b7c-4cd7-9a09-0adce617d1d3] - start to send task result to server
-2026-01-09 20:05:07,658 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:07,677 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019437 seconds
-2026-01-09 20:05:07,678 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=3a8ec481-7b7c-4cd7-9a09-0adce617d1d3] - task result sent to server
-2026-01-09 20:05:07,678 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:09,697 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.013970 seconds
-2026-01-09 20:05:09,697 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:09,697 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=5977f5a4-8769-4d50-b6d6-c86d1148fc83
-2026-01-09 20:05:09,698 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=5977f5a4-8769-4d50-b6d6-c86d1148fc83] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:09,707 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=5977f5a4-8769-4d50-b6d6-c86d1148fc83] - finished processing task
-2026-01-09 20:05:09,709 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=5977f5a4-8769-4d50-b6d6-c86d1148fc83] - start to send task result to server
-2026-01-09 20:05:09,709 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:09,728 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.018880 seconds
-2026-01-09 20:05:09,729 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=5977f5a4-8769-4d50-b6d6-c86d1148fc83] - task result sent to server
-2026-01-09 20:05:09,729 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:11,739 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.004058 seconds
-2026-01-09 20:05:11,739 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:11,739 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=de855d3e-3683-4ec6-967d-ef0c19248ef8
-2026-01-09 20:05:11,740 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=de855d3e-3683-4ec6-967d-ef0c19248ef8] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:11,756 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=de855d3e-3683-4ec6-967d-ef0c19248ef8] - finished processing task
-2026-01-09 20:05:11,758 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=de855d3e-3683-4ec6-967d-ef0c19248ef8] - start to send task result to server
-2026-01-09 20:05:11,758 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:11,778 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019383 seconds
-2026-01-09 20:05:11,778 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=de855d3e-3683-4ec6-967d-ef0c19248ef8] - task result sent to server
-2026-01-09 20:05:11,778 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:13,786 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005198 seconds
-2026-01-09 20:05:13,786 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:13,786 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=ba8bb200-b7db-4146-a7ab-8c8c7a1a368d
-2026-01-09 20:05:13,787 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ba8bb200-b7db-4146-a7ab-8c8c7a1a368d] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:13,796 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ba8bb200-b7db-4146-a7ab-8c8c7a1a368d] - finished processing task
-2026-01-09 20:05:13,798 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ba8bb200-b7db-4146-a7ab-8c8c7a1a368d] - start to send task result to server
-2026-01-09 20:05:13,799 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:13,818 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.018833 seconds
-2026-01-09 20:05:13,818 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ba8bb200-b7db-4146-a7ab-8c8c7a1a368d] - task result sent to server
-2026-01-09 20:05:13,818 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:15,824 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.004151 seconds
-2026-01-09 20:05:15,824 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:15,824 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=34211561-7251-4956-9bc9-8a8396f6f790
-2026-01-09 20:05:15,825 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=34211561-7251-4956-9bc9-8a8396f6f790] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:15,842 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=34211561-7251-4956-9bc9-8a8396f6f790] - finished processing task
-2026-01-09 20:05:15,851 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=34211561-7251-4956-9bc9-8a8396f6f790] - start to send task result to server
-2026-01-09 20:05:15,851 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:15,871 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.020041 seconds
-2026-01-09 20:05:15,871 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=34211561-7251-4956-9bc9-8a8396f6f790] - task result sent to server
-2026-01-09 20:05:15,871 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:17,876 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002724 seconds
-2026-01-09 20:05:17,876 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:17,876 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=3d09f3c4-9e9a-4c0a-94ea-5585f7f87509
-2026-01-09 20:05:17,876 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=3d09f3c4-9e9a-4c0a-94ea-5585f7f87509] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:17,889 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=3d09f3c4-9e9a-4c0a-94ea-5585f7f87509] - finished processing task
-2026-01-09 20:05:17,898 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=3d09f3c4-9e9a-4c0a-94ea-5585f7f87509] - start to send task result to server
-2026-01-09 20:05:17,898 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:17,917 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019359 seconds
-2026-01-09 20:05:17,918 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=3d09f3c4-9e9a-4c0a-94ea-5585f7f87509] - task result sent to server
-2026-01-09 20:05:17,918 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:19,926 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002621 seconds
-2026-01-09 20:05:19,926 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:19,927 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=97b39ca6-6c7b-40fc-8c95-2541b18ca074
-2026-01-09 20:05:19,927 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=97b39ca6-6c7b-40fc-8c95-2541b18ca074] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:19,950 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=97b39ca6-6c7b-40fc-8c95-2541b18ca074] - finished processing task
-2026-01-09 20:05:19,955 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=97b39ca6-6c7b-40fc-8c95-2541b18ca074] - start to send task result to server
-2026-01-09 20:05:19,955 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:19,975 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019678 seconds
-2026-01-09 20:05:19,975 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=97b39ca6-6c7b-40fc-8c95-2541b18ca074] - task result sent to server
-2026-01-09 20:05:19,976 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:21,984 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005563 seconds
-2026-01-09 20:05:21,984 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:21,984 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=19547fab-dbb4-408c-a2ff-647659ea1561
-2026-01-09 20:05:21,985 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=19547fab-dbb4-408c-a2ff-647659ea1561] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:22,007 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=19547fab-dbb4-408c-a2ff-647659ea1561] - finished processing task
-2026-01-09 20:05:22,010 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=19547fab-dbb4-408c-a2ff-647659ea1561] - start to send task result to server
-2026-01-09 20:05:22,010 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:22,054 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.043755 seconds
-2026-01-09 20:05:22,054 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=19547fab-dbb4-408c-a2ff-647659ea1561] - task result sent to server
-2026-01-09 20:05:22,054 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:24,062 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002974 seconds
-2026-01-09 20:05:24,063 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:24,063 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=90806b72-5503-46b0-994c-1db391dca34a
-2026-01-09 20:05:24,064 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=90806b72-5503-46b0-994c-1db391dca34a] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:24,082 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=90806b72-5503-46b0-994c-1db391dca34a] - finished processing task
-2026-01-09 20:05:24,100 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=90806b72-5503-46b0-994c-1db391dca34a] - start to send task result to server
-2026-01-09 20:05:24,100 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:24,122 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.021390 seconds
-2026-01-09 20:05:24,122 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=90806b72-5503-46b0-994c-1db391dca34a] - task result sent to server
-2026-01-09 20:05:24,122 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:26,143 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.016546 seconds
-2026-01-09 20:05:26,144 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:26,144 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=52bd8976-3bc0-4bc7-94eb-266c02bdbd3b
-2026-01-09 20:05:26,145 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=52bd8976-3bc0-4bc7-94eb-266c02bdbd3b] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:26,154 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=52bd8976-3bc0-4bc7-94eb-266c02bdbd3b] - finished processing task
-2026-01-09 20:05:26,156 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=52bd8976-3bc0-4bc7-94eb-266c02bdbd3b] - start to send task result to server
-2026-01-09 20:05:26,157 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:26,178 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.021411 seconds
-2026-01-09 20:05:26,178 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=52bd8976-3bc0-4bc7-94eb-266c02bdbd3b] - task result sent to server
-2026-01-09 20:05:26,178 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:28,186 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002417 seconds
-2026-01-09 20:05:28,187 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:28,187 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=ac2f7066-982e-4711-a836-8019b798f2fa
-2026-01-09 20:05:28,187 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ac2f7066-982e-4711-a836-8019b798f2fa] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:28,205 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ac2f7066-982e-4711-a836-8019b798f2fa] - finished processing task
-2026-01-09 20:05:28,207 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ac2f7066-982e-4711-a836-8019b798f2fa] - start to send task result to server
-2026-01-09 20:05:28,208 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:28,228 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.020813 seconds
-2026-01-09 20:05:28,229 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ac2f7066-982e-4711-a836-8019b798f2fa] - task result sent to server
-2026-01-09 20:05:28,229 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:30,237 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002816 seconds
-2026-01-09 20:05:30,237 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:30,237 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=a0f99bcf-2bde-48b9-b8d8-1d9a05d027b4
-2026-01-09 20:05:30,238 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a0f99bcf-2bde-48b9-b8d8-1d9a05d027b4] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:30,253 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a0f99bcf-2bde-48b9-b8d8-1d9a05d027b4] - finished processing task
-2026-01-09 20:05:30,258 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a0f99bcf-2bde-48b9-b8d8-1d9a05d027b4] - start to send task result to server
-2026-01-09 20:05:30,258 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:30,288 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.029389 seconds
-2026-01-09 20:05:30,288 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a0f99bcf-2bde-48b9-b8d8-1d9a05d027b4] - task result sent to server
-2026-01-09 20:05:30,289 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:32,296 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.003462 seconds
-2026-01-09 20:05:32,297 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:32,297 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=236bf1a2-053a-4278-b351-70428cd2e016
-2026-01-09 20:05:32,297 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=236bf1a2-053a-4278-b351-70428cd2e016] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:32,306 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=236bf1a2-053a-4278-b351-70428cd2e016] - finished processing task
-2026-01-09 20:05:32,309 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=236bf1a2-053a-4278-b351-70428cd2e016] - start to send task result to server
-2026-01-09 20:05:32,309 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:32,329 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.020186 seconds
-2026-01-09 20:05:32,329 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=236bf1a2-053a-4278-b351-70428cd2e016] - task result sent to server
-2026-01-09 20:05:32,330 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:34,334 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002740 seconds
-2026-01-09 20:05:34,334 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:34,334 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=23946d7c-a7c3-46bb-a6ae-72f15c084cfb
-2026-01-09 20:05:34,334 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=23946d7c-a7c3-46bb-a6ae-72f15c084cfb] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:34,345 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=23946d7c-a7c3-46bb-a6ae-72f15c084cfb] - finished processing task
-2026-01-09 20:05:34,347 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=23946d7c-a7c3-46bb-a6ae-72f15c084cfb] - start to send task result to server
-2026-01-09 20:05:34,347 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:34,367 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019718 seconds
-2026-01-09 20:05:34,367 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=23946d7c-a7c3-46bb-a6ae-72f15c084cfb] - task result sent to server
-2026-01-09 20:05:34,368 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:36,388 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.017605 seconds
-2026-01-09 20:05:36,388 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:36,388 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=f02c20c4-2387-40e3-819b-b326a3e64b14
-2026-01-09 20:05:36,388 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f02c20c4-2387-40e3-819b-b326a3e64b14] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:36,399 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f02c20c4-2387-40e3-819b-b326a3e64b14] - finished processing task
-2026-01-09 20:05:36,401 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f02c20c4-2387-40e3-819b-b326a3e64b14] - start to send task result to server
-2026-01-09 20:05:36,402 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:36,422 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.020326 seconds
-2026-01-09 20:05:36,422 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f02c20c4-2387-40e3-819b-b326a3e64b14] - task result sent to server
-2026-01-09 20:05:36,422 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:38,443 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.020180 seconds
-2026-01-09 20:05:38,444 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:38,444 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=82c96965-dd78-40c8-a4fc-225dc3143b4d
-2026-01-09 20:05:38,444 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=82c96965-dd78-40c8-a4fc-225dc3143b4d] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:38,456 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=82c96965-dd78-40c8-a4fc-225dc3143b4d] - finished processing task
-2026-01-09 20:05:38,467 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=82c96965-dd78-40c8-a4fc-225dc3143b4d] - start to send task result to server
-2026-01-09 20:05:38,467 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:38,491 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.023703 seconds
-2026-01-09 20:05:38,491 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=82c96965-dd78-40c8-a4fc-225dc3143b4d] - task result sent to server
-2026-01-09 20:05:38,491 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:40,498 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.003036 seconds
-2026-01-09 20:05:40,499 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
-2026-01-09 20:05:40,499 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=ceff9d6a-ed1c-4e99-a01d-c197f0910ee1
-2026-01-09 20:05:40,499 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ceff9d6a-ed1c-4e99-a01d-c197f0910ee1] - invoking task executor FederatedKMeansExecutor
-2026-01-09 20:05:40,512 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ceff9d6a-ed1c-4e99-a01d-c197f0910ee1] - finished processing task
-2026-01-09 20:05:40,514 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ceff9d6a-ed1c-4e99-a01d-c197f0910ee1] - start to send task result to server
-2026-01-09 20:05:40,514 - FederatedClient - INFO - Starting to push execute result.
-2026-01-09 20:05:40,533 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019049 seconds
-2026-01-09 20:05:40,534 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=ceff9d6a-ed1c-4e99-a01d-c197f0910ee1] - task result sent to server
-2026-01-09 20:05:40,534 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
-2026-01-09 20:05:40,759 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - received request from Server to end current RUN
-2026-01-09 20:05:42,541 - FederatedClient - INFO - pull_task completed. Task name:__end_run__ Status:True 
-2026-01-09 20:05:42,542 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - server asked to end the run
-2026-01-09 20:05:42,542 - ClientRunner - INFO - [identity=EAS, run=simulate_job] - started end-run events sequence
-2026-01-09 20:05:42,542 - ClientRunner - INFO - [identity=EAS, run=simulate_job] - ABOUT_TO_END_RUN fired
-2026-01-09 20:05:42,542 - ClientRunner - INFO - [identity=EAS, run=simulate_job] - Firing CHECK_END_RUN_READINESS ...
-2026-01-09 20:05:42,542 - ClientRunner - INFO - [identity=EAS, run=simulate_job] - END_RUN fired
-2026-01-09 20:05:42,542 - ClientTaskWorker - INFO - End the Simulator run.
+2026-01-09 20:16:57,695 - ClientTaskWorker - INFO - ClientTaskWorker started to run
+2026-01-09 20:16:57,761 - CoreCell - INFO - EAS.simulate_job: created backbone external connector to tcp://localhost:61488
+2026-01-09 20:16:57,761 - conn_manager - INFO - Connector [CH00001 ACTIVE tcp://localhost:61488] is starting
+2026-01-09 20:16:57,761 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2026-01-09 20:16:57,762 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2026-01-09 20:16:57,762 - conn_manager - INFO - Connection [CN00002 127.0.0.1:61516 => 127.0.0.1:61488] is created: PID: 79049
+2026-01-09 20:16:57,867 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2026-01-09 20:16:57,868 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2026-01-09 20:16:57,938 - utils - INFO - Note: NumExpr detected 10 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2026-01-09 20:16:57,938 - utils - INFO - NumExpr defaulting to 8 threads.
+2026-01-09 20:16:58,077 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2026-01-09 20:16:58,077 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2026-01-09 20:16:58,077 - AuxRunner - INFO - registered aux handler for topic __end_run__
+2026-01-09 20:16:58,077 - AuxRunner - INFO - registered aux handler for topic __do_task__
+2026-01-09 20:16:58,078 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2026-01-09 20:16:58,078 - AuxRunner - INFO - registered aux handler for topic __sync_runner__
+2026-01-09 20:16:58,078 - AuxRunner - INFO - registered aux handler for topic __job_heartbeat__
+2026-01-09 20:16:58,078 - AuxRunner - INFO - registered aux handler for topic __task_check__
+2026-01-09 20:16:58,590 - ClientRunner - INFO - [identity=EAS, run=simulate_job] - synced to parent server in 0.5118429660797119 seconds
+2026-01-09 20:16:58,590 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REQUEST
+2026-01-09 20:16:58,590 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REPLY
+2026-01-09 20:16:58,590 - ReliableMessage - INFO - enabled reliable message: max_request_workers=20 query_interval=2.0
+2026-01-09 20:16:58,591 - AuxRunner - INFO - registered aux handler for topic fed.event
+2026-01-09 20:16:58,591 - ClientRunner - INFO - [identity=EAS, run=simulate_job] - client runner started
+2026-01-09 20:16:58,591 - ClientTaskWorker - INFO - Initialize ClientRunner for client: EAS
+2026-01-09 20:16:58,600 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.008522 seconds
+2026-01-09 20:16:58,600 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:16:58,600 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=a44ffe26-822b-4f6a-9638-7e207dd5e5ae
+2026-01-09 20:16:58,600 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a44ffe26-822b-4f6a-9638-7e207dd5e5ae] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:16:58,715 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a44ffe26-822b-4f6a-9638-7e207dd5e5ae] - finished processing task
+2026-01-09 20:16:58,724 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a44ffe26-822b-4f6a-9638-7e207dd5e5ae] - start to send task result to server
+2026-01-09 20:16:58,724 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:16:58,752 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.028108 seconds
+2026-01-09 20:16:58,753 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a44ffe26-822b-4f6a-9638-7e207dd5e5ae] - task result sent to server
+2026-01-09 20:16:58,753 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:00,778 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.004781 seconds
+2026-01-09 20:17:00,779 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:00,779 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=b2427b15-2482-4a27-8034-e4b408a6006e
+2026-01-09 20:17:00,779 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=b2427b15-2482-4a27-8034-e4b408a6006e] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:00,792 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=b2427b15-2482-4a27-8034-e4b408a6006e] - finished processing task
+2026-01-09 20:17:00,795 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=b2427b15-2482-4a27-8034-e4b408a6006e] - start to send task result to server
+2026-01-09 20:17:00,796 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:00,842 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.045861 seconds
+2026-01-09 20:17:00,842 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=b2427b15-2482-4a27-8034-e4b408a6006e] - task result sent to server
+2026-01-09 20:17:00,842 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:02,855 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.004734 seconds
+2026-01-09 20:17:02,856 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:02,856 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=45263c47-3040-460b-8116-8147dc96855c
+2026-01-09 20:17:02,856 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=45263c47-3040-460b-8116-8147dc96855c] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:02,872 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=45263c47-3040-460b-8116-8147dc96855c] - finished processing task
+2026-01-09 20:17:02,876 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=45263c47-3040-460b-8116-8147dc96855c] - start to send task result to server
+2026-01-09 20:17:02,876 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:02,903 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.027203 seconds
+2026-01-09 20:17:02,904 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=45263c47-3040-460b-8116-8147dc96855c] - task result sent to server
+2026-01-09 20:17:02,904 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:04,916 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005659 seconds
+2026-01-09 20:17:04,916 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:04,916 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=bdee59ee-0e33-4c1e-8890-2f1184746b10
+2026-01-09 20:17:04,917 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=bdee59ee-0e33-4c1e-8890-2f1184746b10] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:04,934 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=bdee59ee-0e33-4c1e-8890-2f1184746b10] - finished processing task
+2026-01-09 20:17:04,936 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=bdee59ee-0e33-4c1e-8890-2f1184746b10] - start to send task result to server
+2026-01-09 20:17:04,936 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:04,960 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.023950 seconds
+2026-01-09 20:17:04,961 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=bdee59ee-0e33-4c1e-8890-2f1184746b10] - task result sent to server
+2026-01-09 20:17:04,961 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:06,970 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.003658 seconds
+2026-01-09 20:17:06,970 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:06,971 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=855ecd57-3bfa-45e5-9298-1ba67d244d7d
+2026-01-09 20:17:06,971 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=855ecd57-3bfa-45e5-9298-1ba67d244d7d] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:06,982 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=855ecd57-3bfa-45e5-9298-1ba67d244d7d] - finished processing task
+2026-01-09 20:17:06,988 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=855ecd57-3bfa-45e5-9298-1ba67d244d7d] - start to send task result to server
+2026-01-09 20:17:06,988 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:07,010 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.021841 seconds
+2026-01-09 20:17:07,010 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=855ecd57-3bfa-45e5-9298-1ba67d244d7d] - task result sent to server
+2026-01-09 20:17:07,010 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:09,022 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.006198 seconds
+2026-01-09 20:17:09,022 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:09,023 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=72765ae4-5ac4-4d33-ac74-ae3882b106ec
+2026-01-09 20:17:09,023 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=72765ae4-5ac4-4d33-ac74-ae3882b106ec] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:09,042 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=72765ae4-5ac4-4d33-ac74-ae3882b106ec] - finished processing task
+2026-01-09 20:17:09,045 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=72765ae4-5ac4-4d33-ac74-ae3882b106ec] - start to send task result to server
+2026-01-09 20:17:09,045 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:09,069 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.023721 seconds
+2026-01-09 20:17:09,069 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=72765ae4-5ac4-4d33-ac74-ae3882b106ec] - task result sent to server
+2026-01-09 20:17:09,069 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:11,081 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005582 seconds
+2026-01-09 20:17:11,081 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:11,081 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=f602f9ab-3d2e-45d0-ab7e-97bd46cfa3e7
+2026-01-09 20:17:11,082 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f602f9ab-3d2e-45d0-ab7e-97bd46cfa3e7] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:11,097 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f602f9ab-3d2e-45d0-ab7e-97bd46cfa3e7] - finished processing task
+2026-01-09 20:17:11,100 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f602f9ab-3d2e-45d0-ab7e-97bd46cfa3e7] - start to send task result to server
+2026-01-09 20:17:11,100 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:11,120 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019682 seconds
+2026-01-09 20:17:11,120 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f602f9ab-3d2e-45d0-ab7e-97bd46cfa3e7] - task result sent to server
+2026-01-09 20:17:11,120 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:13,132 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005673 seconds
+2026-01-09 20:17:13,132 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:13,132 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=5b7ac7d4-ff59-4300-9e56-3ca6f12d5751
+2026-01-09 20:17:13,133 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=5b7ac7d4-ff59-4300-9e56-3ca6f12d5751] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:13,145 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=5b7ac7d4-ff59-4300-9e56-3ca6f12d5751] - finished processing task
+2026-01-09 20:17:13,147 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=5b7ac7d4-ff59-4300-9e56-3ca6f12d5751] - start to send task result to server
+2026-01-09 20:17:13,148 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:13,168 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.020590 seconds
+2026-01-09 20:17:13,169 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=5b7ac7d4-ff59-4300-9e56-3ca6f12d5751] - task result sent to server
+2026-01-09 20:17:13,169 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:15,180 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005834 seconds
+2026-01-09 20:17:15,181 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:15,181 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=1b931aff-8b19-4345-be50-946f54a0d931
+2026-01-09 20:17:15,181 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=1b931aff-8b19-4345-be50-946f54a0d931] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:15,201 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=1b931aff-8b19-4345-be50-946f54a0d931] - finished processing task
+2026-01-09 20:17:15,205 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=1b931aff-8b19-4345-be50-946f54a0d931] - start to send task result to server
+2026-01-09 20:17:15,205 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:15,233 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.027830 seconds
+2026-01-09 20:17:15,233 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=1b931aff-8b19-4345-be50-946f54a0d931] - task result sent to server
+2026-01-09 20:17:15,233 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:17,244 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.009524 seconds
+2026-01-09 20:17:17,245 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:17,245 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=70df73c8-943f-4a3b-83d5-dc8153c70692
+2026-01-09 20:17:17,248 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=70df73c8-943f-4a3b-83d5-dc8153c70692] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:17,278 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=70df73c8-943f-4a3b-83d5-dc8153c70692] - finished processing task
+2026-01-09 20:17:17,280 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=70df73c8-943f-4a3b-83d5-dc8153c70692] - start to send task result to server
+2026-01-09 20:17:17,281 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:17,302 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.021439 seconds
+2026-01-09 20:17:17,302 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=70df73c8-943f-4a3b-83d5-dc8153c70692] - task result sent to server
+2026-01-09 20:17:17,303 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:19,315 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005815 seconds
+2026-01-09 20:17:19,315 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:19,315 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=2bb8864a-9f42-4f54-ac07-9ce7aca27d96
+2026-01-09 20:17:19,315 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=2bb8864a-9f42-4f54-ac07-9ce7aca27d96] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:19,327 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=2bb8864a-9f42-4f54-ac07-9ce7aca27d96] - finished processing task
+2026-01-09 20:17:19,339 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=2bb8864a-9f42-4f54-ac07-9ce7aca27d96] - start to send task result to server
+2026-01-09 20:17:19,340 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:19,363 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.023586 seconds
+2026-01-09 20:17:19,364 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=2bb8864a-9f42-4f54-ac07-9ce7aca27d96] - task result sent to server
+2026-01-09 20:17:19,364 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:21,376 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.006602 seconds
+2026-01-09 20:17:21,377 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:21,377 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=c657d234-a7de-4f5b-9f85-bb847cae5ff9
+2026-01-09 20:17:21,377 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c657d234-a7de-4f5b-9f85-bb847cae5ff9] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:21,387 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c657d234-a7de-4f5b-9f85-bb847cae5ff9] - finished processing task
+2026-01-09 20:17:21,396 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c657d234-a7de-4f5b-9f85-bb847cae5ff9] - start to send task result to server
+2026-01-09 20:17:21,396 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:21,426 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.029555 seconds
+2026-01-09 20:17:21,426 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c657d234-a7de-4f5b-9f85-bb847cae5ff9] - task result sent to server
+2026-01-09 20:17:21,427 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:23,450 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.015304 seconds
+2026-01-09 20:17:23,451 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:23,452 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=171d61df-e30f-474d-aea0-66e30c31ac05
+2026-01-09 20:17:23,452 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=171d61df-e30f-474d-aea0-66e30c31ac05] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:23,468 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=171d61df-e30f-474d-aea0-66e30c31ac05] - finished processing task
+2026-01-09 20:17:23,479 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=171d61df-e30f-474d-aea0-66e30c31ac05] - start to send task result to server
+2026-01-09 20:17:23,479 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:23,511 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.031655 seconds
+2026-01-09 20:17:23,511 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=171d61df-e30f-474d-aea0-66e30c31ac05] - task result sent to server
+2026-01-09 20:17:23,511 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:25,524 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.006608 seconds
+2026-01-09 20:17:25,525 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:25,525 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=58075fac-d028-4d3a-80d8-52d05d8cc078
+2026-01-09 20:17:25,525 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=58075fac-d028-4d3a-80d8-52d05d8cc078] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:25,542 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=58075fac-d028-4d3a-80d8-52d05d8cc078] - finished processing task
+2026-01-09 20:17:25,548 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=58075fac-d028-4d3a-80d8-52d05d8cc078] - start to send task result to server
+2026-01-09 20:17:25,548 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:25,602 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.053381 seconds
+2026-01-09 20:17:25,602 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=58075fac-d028-4d3a-80d8-52d05d8cc078] - task result sent to server
+2026-01-09 20:17:25,602 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:27,622 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.007453 seconds
+2026-01-09 20:17:27,623 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:27,623 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=65e8edc2-70f9-4e0d-b9da-9f7d7c2f2868
+2026-01-09 20:17:27,624 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=65e8edc2-70f9-4e0d-b9da-9f7d7c2f2868] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:27,641 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=65e8edc2-70f9-4e0d-b9da-9f7d7c2f2868] - finished processing task
+2026-01-09 20:17:27,646 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=65e8edc2-70f9-4e0d-b9da-9f7d7c2f2868] - start to send task result to server
+2026-01-09 20:17:27,647 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:27,672 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.024461 seconds
+2026-01-09 20:17:27,672 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=65e8edc2-70f9-4e0d-b9da-9f7d7c2f2868] - task result sent to server
+2026-01-09 20:17:27,672 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:29,727 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.038423 seconds
+2026-01-09 20:17:29,731 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:29,732 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=f3034499-939f-4dff-aa51-88c74db4b802
+2026-01-09 20:17:29,732 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f3034499-939f-4dff-aa51-88c74db4b802] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:29,752 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f3034499-939f-4dff-aa51-88c74db4b802] - finished processing task
+2026-01-09 20:17:29,755 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f3034499-939f-4dff-aa51-88c74db4b802] - start to send task result to server
+2026-01-09 20:17:29,756 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:30,011 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.254167 seconds
+2026-01-09 20:17:30,011 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=f3034499-939f-4dff-aa51-88c74db4b802] - task result sent to server
+2026-01-09 20:17:30,011 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:32,029 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.010328 seconds
+2026-01-09 20:17:32,032 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:32,033 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=c21d2940-1ec1-417b-9586-a19577d3a392
+2026-01-09 20:17:32,033 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c21d2940-1ec1-417b-9586-a19577d3a392] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:32,064 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c21d2940-1ec1-417b-9586-a19577d3a392] - finished processing task
+2026-01-09 20:17:32,069 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c21d2940-1ec1-417b-9586-a19577d3a392] - start to send task result to server
+2026-01-09 20:17:32,069 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:32,192 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.122257 seconds
+2026-01-09 20:17:32,193 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c21d2940-1ec1-417b-9586-a19577d3a392] - task result sent to server
+2026-01-09 20:17:32,194 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:34,255 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.004916 seconds
+2026-01-09 20:17:34,256 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:34,256 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=a5301c6a-ebe1-4a7a-a882-1dff1aa1c255
+2026-01-09 20:17:34,256 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a5301c6a-ebe1-4a7a-a882-1dff1aa1c255] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:34,272 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a5301c6a-ebe1-4a7a-a882-1dff1aa1c255] - finished processing task
+2026-01-09 20:17:34,275 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a5301c6a-ebe1-4a7a-a882-1dff1aa1c255] - start to send task result to server
+2026-01-09 20:17:34,275 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:34,297 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.021923 seconds
+2026-01-09 20:17:34,297 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a5301c6a-ebe1-4a7a-a882-1dff1aa1c255] - task result sent to server
+2026-01-09 20:17:34,297 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:36,308 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.008975 seconds
+2026-01-09 20:17:36,309 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:36,309 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=93ce9282-c844-4c37-b2a7-82674fb121ab
+2026-01-09 20:17:36,309 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=93ce9282-c844-4c37-b2a7-82674fb121ab] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:36,341 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=93ce9282-c844-4c37-b2a7-82674fb121ab] - finished processing task
+2026-01-09 20:17:36,344 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=93ce9282-c844-4c37-b2a7-82674fb121ab] - start to send task result to server
+2026-01-09 20:17:36,344 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:36,364 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019866 seconds
+2026-01-09 20:17:36,364 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=93ce9282-c844-4c37-b2a7-82674fb121ab] - task result sent to server
+2026-01-09 20:17:36,364 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:38,376 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005625 seconds
+2026-01-09 20:17:38,376 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:38,376 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=03cbcf0d-533b-4459-a083-62a544f92593
+2026-01-09 20:17:38,376 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=03cbcf0d-533b-4459-a083-62a544f92593] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:38,397 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=03cbcf0d-533b-4459-a083-62a544f92593] - finished processing task
+2026-01-09 20:17:38,399 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=03cbcf0d-533b-4459-a083-62a544f92593] - start to send task result to server
+2026-01-09 20:17:38,399 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:38,423 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.023927 seconds
+2026-01-09 20:17:38,423 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=03cbcf0d-533b-4459-a083-62a544f92593] - task result sent to server
+2026-01-09 20:17:38,424 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:40,434 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.004278 seconds
+2026-01-09 20:17:40,434 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:40,435 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=201c2fb6-9178-4fe4-8029-8af9f2479257
+2026-01-09 20:17:40,435 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=201c2fb6-9178-4fe4-8029-8af9f2479257] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:40,448 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=201c2fb6-9178-4fe4-8029-8af9f2479257] - finished processing task
+2026-01-09 20:17:40,451 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=201c2fb6-9178-4fe4-8029-8af9f2479257] - start to send task result to server
+2026-01-09 20:17:40,452 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:40,475 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.022659 seconds
+2026-01-09 20:17:40,475 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=201c2fb6-9178-4fe4-8029-8af9f2479257] - task result sent to server
+2026-01-09 20:17:40,475 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:42,485 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.004280 seconds
+2026-01-09 20:17:42,486 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:42,486 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=e4649dfd-5025-4f72-895f-9e23228b4279
+2026-01-09 20:17:42,486 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=e4649dfd-5025-4f72-895f-9e23228b4279] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:42,499 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=e4649dfd-5025-4f72-895f-9e23228b4279] - finished processing task
+2026-01-09 20:17:42,501 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=e4649dfd-5025-4f72-895f-9e23228b4279] - start to send task result to server
+2026-01-09 20:17:42,502 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:42,523 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.021403 seconds
+2026-01-09 20:17:42,523 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=e4649dfd-5025-4f72-895f-9e23228b4279] - task result sent to server
+2026-01-09 20:17:42,523 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:44,531 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002635 seconds
+2026-01-09 20:17:44,532 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:44,532 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=40948811-e5b6-4022-be97-a1e509d85cd7
+2026-01-09 20:17:44,532 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=40948811-e5b6-4022-be97-a1e509d85cd7] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:44,543 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=40948811-e5b6-4022-be97-a1e509d85cd7] - finished processing task
+2026-01-09 20:17:44,546 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=40948811-e5b6-4022-be97-a1e509d85cd7] - start to send task result to server
+2026-01-09 20:17:44,547 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:44,569 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.022204 seconds
+2026-01-09 20:17:44,569 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=40948811-e5b6-4022-be97-a1e509d85cd7] - task result sent to server
+2026-01-09 20:17:44,569 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:46,588 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.012031 seconds
+2026-01-09 20:17:46,590 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:46,590 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=a9247b09-d65d-4679-ab3d-ecb95da8884f
+2026-01-09 20:17:46,591 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a9247b09-d65d-4679-ab3d-ecb95da8884f] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:46,614 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a9247b09-d65d-4679-ab3d-ecb95da8884f] - finished processing task
+2026-01-09 20:17:46,620 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a9247b09-d65d-4679-ab3d-ecb95da8884f] - start to send task result to server
+2026-01-09 20:17:46,620 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:46,670 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.050088 seconds
+2026-01-09 20:17:46,671 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=a9247b09-d65d-4679-ab3d-ecb95da8884f] - task result sent to server
+2026-01-09 20:17:46,671 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:48,685 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.007118 seconds
+2026-01-09 20:17:48,685 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:48,685 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=c5d95074-6d04-45e4-ab90-d2ffda24d2ba
+2026-01-09 20:17:48,685 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c5d95074-6d04-45e4-ab90-d2ffda24d2ba] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:48,700 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c5d95074-6d04-45e4-ab90-d2ffda24d2ba] - finished processing task
+2026-01-09 20:17:48,703 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c5d95074-6d04-45e4-ab90-d2ffda24d2ba] - start to send task result to server
+2026-01-09 20:17:48,704 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:48,727 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.022809 seconds
+2026-01-09 20:17:48,727 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c5d95074-6d04-45e4-ab90-d2ffda24d2ba] - task result sent to server
+2026-01-09 20:17:48,727 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:50,740 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.006252 seconds
+2026-01-09 20:17:50,740 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:50,740 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=c448cfdc-7c0d-4194-a508-589a09a345a8
+2026-01-09 20:17:50,740 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c448cfdc-7c0d-4194-a508-589a09a345a8] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:50,760 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c448cfdc-7c0d-4194-a508-589a09a345a8] - finished processing task
+2026-01-09 20:17:50,763 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c448cfdc-7c0d-4194-a508-589a09a345a8] - start to send task result to server
+2026-01-09 20:17:50,763 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:50,786 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.023025 seconds
+2026-01-09 20:17:50,786 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=c448cfdc-7c0d-4194-a508-589a09a345a8] - task result sent to server
+2026-01-09 20:17:50,787 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:52,797 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.004686 seconds
+2026-01-09 20:17:52,797 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:52,797 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=43f41e07-aa97-4219-b9ee-bfc1bc83a1c9
+2026-01-09 20:17:52,798 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=43f41e07-aa97-4219-b9ee-bfc1bc83a1c9] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:52,811 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=43f41e07-aa97-4219-b9ee-bfc1bc83a1c9] - finished processing task
+2026-01-09 20:17:52,815 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=43f41e07-aa97-4219-b9ee-bfc1bc83a1c9] - start to send task result to server
+2026-01-09 20:17:52,816 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:52,836 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.020623 seconds
+2026-01-09 20:17:52,837 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=43f41e07-aa97-4219-b9ee-bfc1bc83a1c9] - task result sent to server
+2026-01-09 20:17:52,837 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:54,850 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.007713 seconds
+2026-01-09 20:17:54,851 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:54,851 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=98f3984c-430c-4783-8a37-ae1d9b7fc833
+2026-01-09 20:17:54,851 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=98f3984c-430c-4783-8a37-ae1d9b7fc833] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:54,863 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=98f3984c-430c-4783-8a37-ae1d9b7fc833] - finished processing task
+2026-01-09 20:17:54,868 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=98f3984c-430c-4783-8a37-ae1d9b7fc833] - start to send task result to server
+2026-01-09 20:17:54,868 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:54,888 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019461 seconds
+2026-01-09 20:17:54,888 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=98f3984c-430c-4783-8a37-ae1d9b7fc833] - task result sent to server
+2026-01-09 20:17:54,888 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:56,897 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002913 seconds
+2026-01-09 20:17:56,897 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:56,897 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=110ae446-0882-4970-9f11-55564adda885
+2026-01-09 20:17:56,897 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=110ae446-0882-4970-9f11-55564adda885] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:56,907 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=110ae446-0882-4970-9f11-55564adda885] - finished processing task
+2026-01-09 20:17:56,909 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=110ae446-0882-4970-9f11-55564adda885] - start to send task result to server
+2026-01-09 20:17:56,909 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:56,928 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.018455 seconds
+2026-01-09 20:17:56,928 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=110ae446-0882-4970-9f11-55564adda885] - task result sent to server
+2026-01-09 20:17:56,928 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:17:58,939 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005834 seconds
+2026-01-09 20:17:58,940 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:17:58,940 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=63e21ff4-33fe-4caf-aec7-7218e5c8eec5
+2026-01-09 20:17:58,940 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=63e21ff4-33fe-4caf-aec7-7218e5c8eec5] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:17:58,955 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=63e21ff4-33fe-4caf-aec7-7218e5c8eec5] - finished processing task
+2026-01-09 20:17:58,958 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=63e21ff4-33fe-4caf-aec7-7218e5c8eec5] - start to send task result to server
+2026-01-09 20:17:58,958 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:17:58,980 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.021581 seconds
+2026-01-09 20:17:58,980 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=63e21ff4-33fe-4caf-aec7-7218e5c8eec5] - task result sent to server
+2026-01-09 20:17:58,981 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:18:00,992 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005834 seconds
+2026-01-09 20:18:00,992 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:18:00,992 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=e41434df-3bc9-48db-953e-462cc4c6630d
+2026-01-09 20:18:00,993 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=e41434df-3bc9-48db-953e-462cc4c6630d] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:18:01,002 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=e41434df-3bc9-48db-953e-462cc4c6630d] - finished processing task
+2026-01-09 20:18:01,004 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=e41434df-3bc9-48db-953e-462cc4c6630d] - start to send task result to server
+2026-01-09 20:18:01,005 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:18:01,025 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.020277 seconds
+2026-01-09 20:18:01,025 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=e41434df-3bc9-48db-953e-462cc4c6630d] - task result sent to server
+2026-01-09 20:18:01,025 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:18:03,034 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005144 seconds
+2026-01-09 20:18:03,034 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:18:03,034 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=9d778b57-2afd-4cdd-b200-ed2c57345f42
+2026-01-09 20:18:03,034 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=9d778b57-2afd-4cdd-b200-ed2c57345f42] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:18:03,051 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=9d778b57-2afd-4cdd-b200-ed2c57345f42] - finished processing task
+2026-01-09 20:18:03,053 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=9d778b57-2afd-4cdd-b200-ed2c57345f42] - start to send task result to server
+2026-01-09 20:18:03,053 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:18:03,075 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.021757 seconds
+2026-01-09 20:18:03,076 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=9d778b57-2afd-4cdd-b200-ed2c57345f42] - task result sent to server
+2026-01-09 20:18:03,076 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:18:05,085 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.006168 seconds
+2026-01-09 20:18:05,087 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:18:05,087 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=2371a128-65a5-4e50-b6ba-65e91e8cb90c
+2026-01-09 20:18:05,087 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=2371a128-65a5-4e50-b6ba-65e91e8cb90c] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:18:05,096 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=2371a128-65a5-4e50-b6ba-65e91e8cb90c] - finished processing task
+2026-01-09 20:18:05,098 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=2371a128-65a5-4e50-b6ba-65e91e8cb90c] - start to send task result to server
+2026-01-09 20:18:05,098 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:18:05,117 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.018386 seconds
+2026-01-09 20:18:05,117 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=2371a128-65a5-4e50-b6ba-65e91e8cb90c] - task result sent to server
+2026-01-09 20:18:05,117 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:18:07,126 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002955 seconds
+2026-01-09 20:18:07,126 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:18:07,127 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=66780adb-df5b-489a-a550-91ae093225af
+2026-01-09 20:18:07,127 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=66780adb-df5b-489a-a550-91ae093225af] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:18:07,143 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=66780adb-df5b-489a-a550-91ae093225af] - finished processing task
+2026-01-09 20:18:07,146 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=66780adb-df5b-489a-a550-91ae093225af] - start to send task result to server
+2026-01-09 20:18:07,146 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:18:07,167 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.021302 seconds
+2026-01-09 20:18:07,168 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=66780adb-df5b-489a-a550-91ae093225af] - task result sent to server
+2026-01-09 20:18:07,168 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:18:09,181 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.007229 seconds
+2026-01-09 20:18:09,182 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:18:09,182 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=d8cf6f67-43de-41f2-b85c-381e361230e9
+2026-01-09 20:18:09,182 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=d8cf6f67-43de-41f2-b85c-381e361230e9] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:18:09,202 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=d8cf6f67-43de-41f2-b85c-381e361230e9] - finished processing task
+2026-01-09 20:18:09,212 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=d8cf6f67-43de-41f2-b85c-381e361230e9] - start to send task result to server
+2026-01-09 20:18:09,213 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:18:09,235 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.022235 seconds
+2026-01-09 20:18:09,235 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=d8cf6f67-43de-41f2-b85c-381e361230e9] - task result sent to server
+2026-01-09 20:18:09,235 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:18:11,247 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.005908 seconds
+2026-01-09 20:18:11,248 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:18:11,248 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=78420e28-442b-4563-b024-1dc4d51100dd
+2026-01-09 20:18:11,248 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=78420e28-442b-4563-b024-1dc4d51100dd] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:18:11,264 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=78420e28-442b-4563-b024-1dc4d51100dd] - finished processing task
+2026-01-09 20:18:11,267 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=78420e28-442b-4563-b024-1dc4d51100dd] - start to send task result to server
+2026-01-09 20:18:11,268 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:18:11,292 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.024495 seconds
+2026-01-09 20:18:11,293 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=78420e28-442b-4563-b024-1dc4d51100dd] - task result sent to server
+2026-01-09 20:18:11,293 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:18:13,299 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.003816 seconds
+2026-01-09 20:18:13,300 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:18:13,300 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=b5ffa1ed-6342-44c8-a0f1-05b1ec2b2f3d
+2026-01-09 20:18:13,300 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=b5ffa1ed-6342-44c8-a0f1-05b1ec2b2f3d] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:18:13,317 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=b5ffa1ed-6342-44c8-a0f1-05b1ec2b2f3d] - finished processing task
+2026-01-09 20:18:13,321 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=b5ffa1ed-6342-44c8-a0f1-05b1ec2b2f3d] - start to send task result to server
+2026-01-09 20:18:13,321 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:18:13,346 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.025056 seconds
+2026-01-09 20:18:13,347 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=b5ffa1ed-6342-44c8-a0f1-05b1ec2b2f3d] - task result sent to server
+2026-01-09 20:18:13,347 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:18:15,359 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.006578 seconds
+2026-01-09 20:18:15,360 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:18:15,360 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=745b993e-fecc-4379-9287-34cc92252cbc
+2026-01-09 20:18:15,360 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=745b993e-fecc-4379-9287-34cc92252cbc] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:18:15,369 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=745b993e-fecc-4379-9287-34cc92252cbc] - finished processing task
+2026-01-09 20:18:15,371 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=745b993e-fecc-4379-9287-34cc92252cbc] - start to send task result to server
+2026-01-09 20:18:15,371 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:18:15,392 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.021010 seconds
+2026-01-09 20:18:15,392 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=745b993e-fecc-4379-9287-34cc92252cbc] - task result sent to server
+2026-01-09 20:18:15,393 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:18:17,401 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.002575 seconds
+2026-01-09 20:18:17,402 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:18:17,402 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=079487cd-6dec-4377-8be7-0e050a8fe1cb
+2026-01-09 20:18:17,403 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=079487cd-6dec-4377-8be7-0e050a8fe1cb] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:18:17,414 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=079487cd-6dec-4377-8be7-0e050a8fe1cb] - finished processing task
+2026-01-09 20:18:17,416 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=079487cd-6dec-4377-8be7-0e050a8fe1cb] - start to send task result to server
+2026-01-09 20:18:17,417 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:18:17,436 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.019368 seconds
+2026-01-09 20:18:17,436 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=079487cd-6dec-4377-8be7-0e050a8fe1cb] - task result sent to server
+2026-01-09 20:18:17,437 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:18:19,449 - Communicator - INFO - Received from server. getTask: kmeans_step size: 14.8KB (14778 Bytes) time: 0.004987 seconds
+2026-01-09 20:18:19,449 - FederatedClient - INFO - pull_task completed. Task name:kmeans_step Status:True 
+2026-01-09 20:18:19,449 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=kmeans_step, id=dcecfd92-6fd8-4ae6-92a1-aeef8c7690d5
+2026-01-09 20:18:19,450 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=dcecfd92-6fd8-4ae6-92a1-aeef8c7690d5] - invoking task executor FederatedKMeansExecutor
+2026-01-09 20:18:19,459 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=dcecfd92-6fd8-4ae6-92a1-aeef8c7690d5] - finished processing task
+2026-01-09 20:18:19,461 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=dcecfd92-6fd8-4ae6-92a1-aeef8c7690d5] - start to send task result to server
+2026-01-09 20:18:19,461 - FederatedClient - INFO - Starting to push execute result.
+2026-01-09 20:18:19,480 - Communicator - INFO - SubmitUpdate to: server. size: 28.6KB (28595 Bytes). time: 0.018840 seconds
+2026-01-09 20:18:19,481 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=kmeans_step, task_id=dcecfd92-6fd8-4ae6-92a1-aeef8c7690d5] - task result sent to server
+2026-01-09 20:18:19,481 - ClientTaskWorker - INFO - Finished one task run for client: EAS interval: 2 task_processed: True
+2026-01-09 20:18:20,340 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - received request from Server to end current RUN
+2026-01-09 20:18:21,491 - FederatedClient - INFO - pull_task completed. Task name:__end_run__ Status:True 
+2026-01-09 20:18:21,491 - ClientRunner - INFO - [identity=EAS, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - server asked to end the run
+2026-01-09 20:18:21,491 - ClientRunner - INFO - [identity=EAS, run=simulate_job] - started end-run events sequence
+2026-01-09 20:18:21,491 - ClientRunner - INFO - [identity=EAS, run=simulate_job] - ABOUT_TO_END_RUN fired
+2026-01-09 20:18:21,492 - ClientRunner - INFO - [identity=EAS, run=simulate_job] - Firing CHECK_END_RUN_READINESS ...
+2026-01-09 20:18:21,492 - ClientRunner - INFO - [identity=EAS, run=simulate_job] - END_RUN fired
+2026-01-09 20:18:21,492 - ClientTaskWorker - INFO - End the Simulator run.

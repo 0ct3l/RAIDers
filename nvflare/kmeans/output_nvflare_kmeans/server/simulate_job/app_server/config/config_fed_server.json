@@ -27,7 +27,7 @@
             "path": "fed_kmeans_components.KMeansShareableGenerator",
             "args": {
                 "k": 8,
-                "init_csv": "/Users/apple/Desktop/Projects/cmu_biohack/data_src_db/clients_data/client_AFR.csv"
+                "init_csv": "/Users/apple/Desktop/Projects/cmu_biohack/RAIDers/nvflare/kmeans/clients_data/client_AFR.csv"
             }
         }
     ],
