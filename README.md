@@ -105,10 +105,12 @@ Molecular subtypes are discovered through a decentralized K-Means algorithm:
 
 ## Data Sources
 
-* **ClinVar:** Pathogenic variant curation.
-* **gnomAD:** Population-level allele frequencies.
-* **OMIM/Orphanet:** Clinical gene–disease associations.
-* **STRING:** Protein–protein interaction network topology.
+| Database | Purpose |
+| :--: | :--: |
+| [**ClinVar**](https://www.ncbi.nlm.nih.gov/clinvar/) | Pathogenic Variant Curation | 
+| [**gnomAD**](https://gnomad.broadinstitute.org) | Gene & Variant Constraint Scores; Population AFs  | 
+| [**OMIM**](https://www.omim.org) / [**Orphanet**](https://www.orpha.net)| Clinical gene-disease associations |
+| [**Stringdb**](https://string-db.org) | Protein-Protein interaction network topology | 
 
 # Contributers 
 
