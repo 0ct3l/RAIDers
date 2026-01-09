@@ -136,9 +136,9 @@ Molecular subtypes are discovered through a decentralized K-Means algorithm:
 | Chantera Lazard | lazard.c@northeastern.edu | 0009-0006-1367-3812 | Northeastern University | 
 | Jialan Ma | jialanma7@gmail.com |0009-0007-2670-9076 | Broad Institute of MIT and Harvard |
 | Kushal Koirala | kkoirala@unc.edu | 0009-0009-7935-4533 | University of North Carolina | 
-| Kyulin Kim | | 0009-0007-8976-2405 | University College London | 
+| Kyulin Kim | lynn.kim.24@ucl.ac.uk | 0009-0007-8976-2405 | University College London | 
 | Nikita Rajesh | | 0009-0009-9850-5261 | Carnegie Mellon University | 
-| Paul Kao | | 0009-0003-9047-0160 | National Taiwan University |
+| Pu (Paul) Kao | gaopuo1234@gmail.com | 0009-0003-9047-0160 | National Taiwan University |
 | Shreya Nandakumar | | 0009-0006-9230-3659 | Carnegie Mellon University |
 | Vibha Acharya | via16@pitt.edu | 0000-0001-6598-0052 | University of Pittsburgh |
 | William Lu | wtlu@andrew.cmu.edu | 0000-0002-2768-1489 | Carnegie Mellon University |
