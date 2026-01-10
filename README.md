@@ -114,8 +114,10 @@ Molecular subtypes are discovered through a decentralized K-Means algorithm:
 
 * **Computational Validation:** Evaluates the cohesion and separation of discovered molecular clusters using silhouette scores and within-cluster sum of squares.
 <div style="display:flex; gap:10px;">
-<img width="475" alt="image" src="https://github.com/user-attachments/assets/1eb56605-e86a-4d5a-8de2-0299f703a71d" />
-<img width="525" alt="image" src="https://github.com/user-attachments/assets/025324f5-040c-4588-8db9-f4cff49b966c" />
+<img width="1212" alt="image" src="https://github.com/user-attachments/assets/cfd99a75-3d5b-482a-9e55-9d73c2bb1d50" />
+</div>
+<div align="center">
+<img width="480" alt="image" src="https://github.com/user-attachments/assets/0d772f44-19a5-4497-b835-ce9ddc5dd32e" />
 </div>
 
 ![PPtSlide_4](InteractionLogic.pptx-4.png)
