@@ -1,0 +1,8 @@
+pathway,n_genes,genes
+Proteostasis,8,"C9ORF72, CCNF, OPTN, SOD1, SQSTM1, TBK1, UBQLN2, VCP"
+RNA_Metabolism,8,"ANG, C9ORF72, ELP3, FUS, HNRNPA1, HNRNPA2B1, MATR3, TARDBP"
+Cytoskeletal_Axonal_Transport,5,"DCTN1, KIF5A, NEFH, PFN1, TUBA4A"
+Mitochondrial,6,"ATXN2, C19orf12, CHCHD10, FUS, SIGMAR1, SOD1"
+Excitotoxicity,5,"C9ORF72, DAO, SOD1, TARDBP, UNC13A"
+Vesicle_Trafficking,5,"ALS2, CHMP2B, FIG4, SPG11, VAPB"
+DNA_Damage,4,"C21orf2, NEK1, SETX, SPG11"
