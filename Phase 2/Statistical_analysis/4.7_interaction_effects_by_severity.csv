@@ -1,0 +1,4 @@
+severity,n_carriers,n_with_interactions,pct_with_interactions,n_with_synergy,pct_with_synergy,n_with_redundancy,pct_with_redundancy,mean_interaction_multiplier
+Mild,245,0,0.0,0,0.0,0,0.0,1.0
+Moderate,4031,31,0.8,27,0.7,2,0.0,1.003
+Severe,1767,57,3.2,34,1.9,7,0.4,1.006

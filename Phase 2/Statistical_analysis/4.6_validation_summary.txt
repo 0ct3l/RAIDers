@@ -1,0 +1,11 @@
+======================================================================
+VALIDATION SUMMARY: Count vs Burden Scoring
+======================================================================
+
+Tests where BURDEN performed better: 2
+Tests where COUNT performed better: 1
+
+CONCLUSION: Weighted burden scoring shows improvement over simple counts.
+            The evidence weights and interaction multipliers add predictive value.
+
+Detailed results in: 4.6_validation_count_vs_burden.csv

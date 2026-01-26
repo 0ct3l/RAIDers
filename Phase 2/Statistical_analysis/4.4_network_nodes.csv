@@ -1,0 +1,8 @@
+id,label,size,pct,mean_burden
+Proteostasis,Proteostasis,3644,60.3,0.643
+RNA_Metabolism,RNA Metabolism,793,13.1,0.844
+Cytoskeletal_Axonal_Transport,Cytoskeletal Axonal Transport,274,4.5,0.131
+Mitochondrial,Mitochondrial,2333,38.6,1.114
+Excitotoxicity,Excitotoxicity,2046,33.9,1.291
+Vesicle_Trafficking,Vesicle Trafficking,1722,28.5,0.237
+DNA_Damage,DNA Damage,956,15.8,0.15
