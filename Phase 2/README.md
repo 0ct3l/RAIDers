@@ -23,6 +23,8 @@ Phase 1 focused on building a synthetic biobank infrastructure from the ground u
 
 To simulate biological complexity, we implemented the following formula:
 
+S = (I x M x C) + S
+
 Where:
 
 * I: Base Impact
