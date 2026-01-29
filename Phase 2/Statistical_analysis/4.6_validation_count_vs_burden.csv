@@ -1,5 +1,0 @@
-test,metric,count_based,burden_based,improvement,better_method
-Correlation with severity_score,Spearman r,0.034,0.036,0.002,burden
-AUC Mild vs Severe,ROC AUC,0.753,0.757,0.003,burden
-Cohen d Mild vs Severe,Cohen d,1.091,0.929,-0.162,count
-Interaction multiplier vs severity,Spearman r,,0.009,,N/A
