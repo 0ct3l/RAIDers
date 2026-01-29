@@ -104,6 +104,9 @@ Compares multiple scoring methods side-by-side:
 
 **Use case**: Load into Cytoscape, D3.js, or similar for visualization.
 
+<img width="729" height="866" alt="Screenshot 2026-01-29 at 10 43 28 am" src="https://github.com/user-attachments/assets/ac0485dc-6a5d-40dd-bda7-0ff763c3b02f" />
+
+
 ---
 
 ### 4.5: Cross-Severity Comparison
