@@ -25,10 +25,10 @@ To simulate biological complexity, we implemented the following formula:
 
 Where:
 
-* ****: Base Impact
-* ****: Ancestral Modifier (Protective/Neutral/Aggravating)
-* ****: Consequence Multiplier (e.g., LoF vs. Missense)
-* ****: Stochastic Noise
+* I: Base Impact
+* M: Ancestral Modifier (Protective/Neutral/Aggravating)
+* C: Consequence Multiplier (e.g., LoF vs. Missense)
+* S: Stochastic Noise
 
 ---
 
